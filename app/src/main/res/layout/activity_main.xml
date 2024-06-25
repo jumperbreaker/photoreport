@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context=".MainActivity"
+    android:background="#005597">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/currentPathTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:background="#cce8ff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#005597" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/moveButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffeac2"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/cancelMoveButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#ff9999"
+                android:layout_weight="1"
+                android:text="Отмена" />
+
+            <Button
+                android:id="@+id/applayMoveButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#b3ffb3"
+                android:text="Переместить" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectedCheckboxesQueryActionButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#005597"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/selectedCheckboxesRemoveButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ff9999"
+                android:text="Удалить" />
+
+            <Button
+                android:id="@+id/selectedCheckboxesClearButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffdb99"
+                android:text="Отмена" />
+
+            <Button
+                android:id="@+id/selectedCheckboxesMoveButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#b3ffb3"
+                android:text="Переместить" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectedCheckboxesAcceptActionButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#005597"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/selectedCheckboxesCancelButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ff9999"
+                android:text="Отмена" />
+
+            <Button
+                android:id="@+id/selectedCheckboxesPasteButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#b3ffb3"
+                android:text="Вставить" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#005597">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back"
+                    android:scaleType="fitCenter"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="3dp"
+                    android:layout_alignParentStart="true"/>
+
+                <ImageButton
+                    android:id="@+id/addFolderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_newfolder"
+                    android:scaleType="fitCenter"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="3dp" />
+
+                <ImageButton
+                    android:id="@+id/addPhotoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_newphoto"
+                    android:scaleType="fitCenter"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="3dp" />
+
+                <ImageButton
+                    android:id="@+id/sortButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_sort"
+                    android:scaleType="fitCenter"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="3dp" />
+
+                <ImageButton
+                    android:id="@+id/searchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search"
+                    android:scaleType="fitCenter"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="3dp" />
+
+                <ImageButton
+                    android:id="@+id/settingsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_settings"
+                    android:scaleType="fitCenter"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="3dp" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
